@@ -2,7 +2,7 @@
 <executable>
   <category>Registration</category>
   <title>Physics-Based Non-Rigid Registration (PBNRR)</title>
-  <description><![CDATA[Non-Rigid Registers a moving to a fixed MRI. The method uses a linear homogeneous biomechanical model to compute a dense deformation field that defines a transformation for every point in the fixed image to the moving image. The method includes three components: Feature Point Selection, Block Matching and Finite Element Solver, combine together to provide a user-friendly interface. A comprehensive description of the method can be found in article : An ITK implementation of a physics-based non-rigid registration method for brain deformation in image-guided neurosurgery, Front. Neuroinform. 8:33. doi: 10.3389/fninf.2014.00033.]]></description>
+  <description><![CDATA[This module non-rigid registers a moving to a fixed MRI using a linear homogeneous biomechanical model to compute a dense deformation field that defines a transformation for every point in the fixed to the moving image. The module includes three components(Feature Point Selection, Block Matching and Finite Element Solver) combine together to provide a user-friendly interface. The implementation is decribed at: An ITK implementation of a physics-based non-rigid registration method for brain deformation in image-guided neurosurgery, Front. Neuroinform. 8:33. doi: 10.3389/fninf.2014.00033.]]></description>
   <version>0.0.1</version>
   <documentation-url>http://www.example.com/Slicer/Modules/PBNRR</documentation-url>
   <license>Slicer</license>
