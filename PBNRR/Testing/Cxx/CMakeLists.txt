@@ -15,10 +15,10 @@ set_target_properties(${CLP}Test PROPERTIES LABELS ${CLP})
 set(testname ${CLP}Test1)
 add_test(NAME ${testname} COMMAND ${SEM_LAUNCH_COMMAND} $<TARGET_FILE:${CLP}Test>
   ModuleEntryPoint
-  --movingImage             ${BASELINE}/case1/MovingImage.nii.gz 
-  --fixedImage              ${BASELINE}/case1/FixedImage.nii.gz
-  --maskImage               ${BASELINE}/case1/MovingMask.nii.gz
-  --mesh                    ${BASELINE}/case1/Mesh.vtk
+  --movingImage             ${BASELINE}/movingImage1.nii.gz 
+  --fixedImage              ${BASELINE}/fixedImage1.nii.gz
+  --maskImage               ${BASELINE}/maskImage1.nii.gz
+  --mesh                    ${BASELINE}/mesh1.vtk
   --poissonRatio            0.45
   --youngModulus            0.0021
   --interpolationSteps      5
@@ -27,17 +27,17 @@ add_test(NAME ${testname} COMMAND ${SEM_LAUNCH_COMMAND} $<TARGET_FILE:${CLP}Test
   --selectionFraction       0.05
   --windowRadius            4,4,1
   --blockRadius             1,1,1   
-  --outputImage             warpedImage.nii.gz
+  #--outputImage             warpedImage.nii.gz
    )
 set_property(TEST ${testname} PROPERTY LABELS ${CLP})
 
 set(testname ${CLP}Test2)
 add_test(NAME ${testname} COMMAND ${SEM_LAUNCH_COMMAND} $<TARGET_FILE:${CLP}Test>
   ModuleEntryPoint
-  --movingImage             ${BASELINE}/case2/MovingImage.nii.gz 
-  --fixedImage              ${BASELINE}/case2/FixedImage.nii.gz
-  --maskImage               ${BASELINE}/case2/MovingMask.nii.gz
-  --mesh                    ${BASELINE}/case2/Mesh.vtk
+  --movingImage             ${BASELINE}/movingImage2.nii.gz 
+  --fixedImage              ${BASELINE}/fixedImage2.nii.gz
+  --maskImage               ${BASELINE}/maskImage2.nii.gz
+  --mesh                    ${BASELINE}/mesh2.vtk
   --poissonRatio            0.45
   --youngModulus            0.0021
   --interpolationSteps      5
@@ -46,7 +46,7 @@ add_test(NAME ${testname} COMMAND ${SEM_LAUNCH_COMMAND} $<TARGET_FILE:${CLP}Test
   --selectionFraction       0.05
   --windowRadius            3,3,1
   --blockRadius             1,1,1   
-  --outputImage             warpedImage.nii.gz
+  #--outputImage             warpedImage.nii.gz
    )
 set_property(TEST ${testname} PROPERTY LABELS ${CLP})
 
